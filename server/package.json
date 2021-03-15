@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Photo App Server",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "tsc && node dist/server.js"
+  },
+  "author": "Haji Mohammed",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.21.1",
+    "graphql": "^15.5.0"
+  }
+}
