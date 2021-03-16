@@ -1,14 +1,7 @@
 import { ApolloServer, gql } from "apollo-server"
+import { schema } from "./schema"
 
-const typeDefs = gql``
-
-const data = []
-
-const resolvers = {
-  Query: {},
-}
-
-const server = new ApolloServer({ typeDefs, resolvers })
+const server = new ApolloServer(schema)
 
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`)
